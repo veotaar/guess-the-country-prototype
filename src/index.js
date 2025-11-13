@@ -398,7 +398,7 @@ const handleGuess = async (msg) => {
   }
 };
 
-client.on('ready', (client) => {
+client.on('clientReady', (client) => {
   console.log(`${client.user.tag} is ready!`);
 });
 
