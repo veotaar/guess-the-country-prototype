@@ -7,7 +7,7 @@ const connect = async () => {
 
   try {
     await mongoose.connect(dbString, {
-      dbName: 'ulke-tahmin',
+      dbName: process.env.DB_NAME,
       retryWrites: true,
       writeConcern: writeConcern,
     });
